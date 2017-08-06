@@ -1,0 +1,1 @@
+ampy put index.html
