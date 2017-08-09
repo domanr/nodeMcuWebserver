@@ -106,10 +106,9 @@ def main(micropython_optimize=True):
             led.off()
         ds.convert_temp()
         time.sleep_ms(750)
-        temp = 0
         for rom in roms:
             temp = ds.read_temp(rom)
-        client_stream.write(CONTENT % temp)
+        client_stream.write(CONTENT % round(temp, 1))
 
         client_stream.close()
         if not micropython_optimize:
