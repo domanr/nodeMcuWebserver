@@ -9,24 +9,29 @@
 				font-size: 16px;
 				font-family: sans-serif;
 				background-color: lightslategray;
-        color: black;
+        		color: black;
 			}
 			.content {
 				padding: 0px 10px 20px 10px;
 			}
 
 			@media (max-width: 450px) {
-    		.picture {
-        	width: 100%;
+    			.picture {
+        			width: 100%;
 					height: auto;
-    		}
+    			}
+			}
 
+			button {
+				font-size: 30px;
 			}
 		</style>
     </head>
     <body>
 				<div class="content">Üdvözöllek a Bubuka hálózaton, ez itt a Domán család webszervere. Sok érdekes információt fogsz itt találni.</div>
 				<div class="content">Nemrég új taggal bővült a család, megérkezett Domán Boglárka.</div>
-				<img class="picture" src="img/bogi.jpg" width="450" height="415" title="Bogi">
+				<div class="content">A szoba hőmérséklete %d C</div>
+				<!--img class="picture" src="img/bogi.jpg" width="450" height="415" title="Bogi"-->
+				<a href="ledON"><button>Lámpa bekapcs</button></a>&nbsp;<a href="ledOFF"><button>Lámpa kikapcs</button></a>
 	</body>
 </html>
